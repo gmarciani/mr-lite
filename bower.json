@@ -1,0 +1,29 @@
+{
+  "name": "mr-lite",
+  "version": "1.0",
+  "description": "Fully customizable HTML5 Responsive Wordpress theme based on Twitter Bootstrap. Built with SASS, NodeJS, Bower and Gulp.",
+  "main": "style.css",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "html5",
+    "responsive",
+    "wordpress",
+    "theme",
+    "bootstrap",
+    "sass",
+    "nodejs",
+    "bower",
+    "gulp"
+  ],
+  "authors": [
+    "Giacomo Marciani"
+  ],
+  "license": "MIT",
+  "homepage": "gmarciani.com",
+  "private": true,
+  "devDependencies": {
+    "font-awesome": "~4.3.0"
+  }
+}

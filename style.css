@@ -1,0 +1,19 @@
+/*!
+Theme Name: MR Lite
+Theme URI: http://gmarciani.com
+Description: Fully customizable HTML5 Responsive Wordpress theme based on Twitter Bootstrap. Built with SASS, NodeJS, Bower and Gulp.
+Version: 1.0.0
+Author: Giacomo Marciani
+Author URI: http://gmarciani.com
+License: MIT
+License URI: http://opensource.org/licenses/MIT
+Tags: html5, responsive, wordpress, theme, bootstrap, sass, nodejs, bower, gulp.
+Text Domain: mr-lite
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.sticky {}
+.gallery-caption {}
+.bypostauthor {}

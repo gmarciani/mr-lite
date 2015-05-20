@@ -1,0 +1,398 @@
+@media (min-width: 1200px) {
+
+  .page {
+    overflow: hidden;
+    margin: 0px 0px 0px 40px;
+
+    .page-container {
+      position: relative;
+      padding: 3rem;
+    }
+  }
+
+  .site-actions {
+    width: 40px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: @zindex5;
+
+    .show-site-nav {
+      display: none;
+    }
+
+    .back-top {
+      position: fixed;
+      bottom: 0;
+    }
+  }
+
+  .brand-nav {
+    width: 100%;
+
+    .brand-nav-container {
+      margin: 0 0 3rem 0;
+
+      .brand-nav-logo {
+        display: inline-block;
+        float: left;
+        width: 20%;
+
+      }
+
+      .brand-nav-items {
+        display: inline-block;
+        width: 80%;
+
+        .brand-nav-item {
+          display: inline-block;
+          width: 24%;
+        }
+      }
+    }
+  }
+
+  .site-main {
+    position: relative;
+    width: 80%;
+    float: left;
+
+    .site-main-container {
+      margin: 3rem 0rem 3rem 3rem;
+    }
+  }
+
+  .site-nav {
+    position: relative;
+    width: 20%;
+    height: 100% !important;
+    float: left;
+
+    .site-nav-container {
+      margin: 3rem 0rem 3rem 0rem;
+
+      .site-nav-brand {
+        display: none;
+      }
+
+      .site-nav-widgets {
+        width: 100%;
+        .site-nav-widgets-container {
+
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .page {
+    overflow: hidden;
+    margin: 0px 0px 0px 40px;
+
+    .page-container {
+      position: relative;
+      padding: 2rem;
+    }
+  }
+
+  .site-actions {
+    width: 40px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: @zindex5;
+
+    .show-site-nav {
+      display: visible;
+    }
+
+    .back-top {
+      position: fixed;
+      bottom: 0;
+    }
+  }
+
+  .brand-nav {
+    width: 100%;
+
+    .brand-nav-container {
+      margin: 0 0 3rem 0;
+
+      .brand-nav-logo {
+        display: inline-block;
+        float: left;
+        width: 20%;
+
+      }
+
+      .brand-nav-items {
+        display: inline-block;
+        width: 80%;
+
+        .brand-nav-item {
+          display: inline-block;
+          width: 49%;
+        }
+      }
+    }
+  }
+
+  .site-main {
+    position: relative;
+    width: 100%;
+    float: left;
+
+    .site-main-container {
+      margin: 3rem 0rem 3rem 1.5rem;
+    }
+  }
+
+  .site-nav {
+    height: 100% !important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .translateX(-130%);
+    -webkit-transition: -webkit-transform 500ms;
+    -moz-transition: -moz-transform 500ms;
+    -o-transition: -o-transform 500ms;
+    transition: transform 500ms;
+    .backface-visibility(hidden);
+
+    .site-nav-container {
+      margin: 3rem;
+
+      .site-nav-brand {
+        width: 50%;
+        float: left;
+
+        .site-nav-brand-container {
+          padding: 3rem;
+        }
+      }
+
+      .site-nav-widgets {
+        width: 50%;
+        float: right;
+
+        .site-nav-widgets-container {
+          padding: 3rem;
+        }
+      }
+    }
+  }
+
+  .brand-nav,
+  .site-main,
+  .site-footer {
+    .translateX(0);
+    position: relative;
+    -webkit-transition: -webkit-transform 500ms;
+    -moz-transition: -moz-transform 500ms;
+    -o-transition: -o-transform 500ms;
+    transition: transform 500ms;
+    .backface-visibility(hidden);
+  }
+
+  .show-nav {
+
+    .site-nav {
+      z-index: @zindex5;
+      position: relative;
+
+      .translateX(0);
+      -webkit-transition: -webkit-transform 500ms;
+      -moz-transition: -moz-transform 500ms;
+      -o-transition: -o-transform 500ms;
+      transition: transform 500ms;
+      .backface-visibility(hidden);
+    }
+
+    .brand-nav,
+    .site-main,
+    .site-footer {
+      display:none;
+      position: fixed;
+      overflow: hidden;
+
+      .translateX(45%);
+      -webkit-transition: -webkit-transform 500ms;
+      -moz-transition: -moz-transform 500ms;
+      -o-transition: -o-transform 500ms;
+      transition: transform 500ms;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .page {
+    overflow: hidden;
+    margin: 40px 0px 0px 0px;
+
+    .page-container {
+      position: relative;
+      padding: 2rem;
+    }
+  }
+
+  .site-actions {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: @zindex5;
+
+    .show-site-nav {
+      display: visible;
+      position: relative;
+      float: left;
+    }
+
+    .back-top {
+      float: left;
+      display: none;
+    }
+
+    .actions {
+
+      .action {
+        float: right;
+      }
+    }
+  }
+
+  .brand-nav {
+    width: 100%;
+
+    .brand-nav-container {
+      margin: 0 0 3rem 0;
+
+      .brand-nav-logo {
+        display: inline;
+        float: left;
+        width: 100%;
+        text-align: center;
+
+        img {
+          max-height: 15rem;
+        }
+
+      }
+
+      .brand-nav-items {
+        display: inline;
+        width: 100%;
+
+        .brand-nav-item {
+          display: inline;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .site-main {
+    width: 100%;
+    float: left;
+
+    .site-main-container {
+      margin: 3rem 0rem 3rem 0rem;
+    }
+  }
+
+  .site-nav {
+    height: 100% !important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .translateX(-130%);
+    -webkit-transition: -webkit-transform 500ms;
+    -moz-transition: -moz-transform 500ms;
+    -o-transition: -o-transform 500ms;
+    transition: transform 500ms;
+    .backface-visibility(hidden);
+
+    .site-nav-container {
+      margin: 3rem;
+
+      .site-nav-brand {
+        width: 50%;
+        float: left;
+
+        .site-nav-brand-container {
+          padding: 3rem;
+        }
+      }
+
+      .site-nav-widgets {
+        width: 50%;
+        float: right;
+
+        .site-nav-widgets-container {
+          padding: 3rem;
+        }
+      }
+    }
+  }
+
+  .brand-nav,
+  .site-main,
+  .site-footer {
+    .translateX(0);
+    position: relative;
+    -webkit-transition: -webkit-transform 500ms;
+    -moz-transition: -moz-transform 500ms;
+    -o-transition: -o-transform 500ms;
+    transition: transform 500ms;
+    .backface-visibility(hidden);
+  }
+
+  .show-nav {
+
+    .site-nav {
+      z-index: @zindex4;
+      position: relative;
+
+      .translateX(0);
+      -webkit-transition: -webkit-transform 500ms;
+      -moz-transition: -moz-transform 500ms;
+      -o-transition: -o-transform 500ms;
+      transition: transform 500ms;
+      .backface-visibility(hidden);
+    }
+
+    .brand-nav,
+    .site-main,
+    .site-footer {
+      display:none;
+      position: fixed;
+      overflow: hidden;
+
+      .translateX(45%);
+      -webkit-transition: -webkit-transform 500ms;
+      -moz-transition: -moz-transform 500ms;
+      -o-transition: -o-transform 500ms;
+      transition: transform 500ms;
+    }
+  }
+}
+
+// site footer
+.site-info {
+  border-top: 5px solid @gray3;
+  float: left;
+  width: 100%;
+  padding: 20px 0 40px;
+  position: relative;
+}

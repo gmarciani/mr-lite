@@ -1,0 +1,51 @@
+.brand-nav {
+
+  border-bottom: 1px solid @gray9;
+
+  .brand-nav-container {
+
+    .brand-nav-logo {
+      vertical-align: middle;
+    }
+
+    .brand-nav-item {
+      vertical-align: middle;
+
+      .brand-nav-item-description {
+        font-family: @sansFontFamily;
+        font-weight: 400;
+        color: @gray7;
+        font-size: @fontSizeSmall;
+        line-height: @lineHeightSmall;
+      }
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .brand-nav-item-container {
+    padding: 0 5% 0 5%;
+  }
+
+  .brand-nav-item-title {
+    text-align: left;
+  }
+
+  .brand-nav-item-description {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand-nav-item-container {
+    padding: 1rem 0rem 1rem 0rem;
+  }
+
+  .brand-nav-item-title {
+    text-align: center;
+  }
+
+  .brand-nav-item-description {
+    text-align: center;
+  }
+}
